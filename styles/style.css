@@ -1,0 +1,62 @@
+@import url('./header.css');
+@import url('./section.css');
+@import url('./footer.css');
+
+:root {
+    --Black-400: #191A1E;
+    --Black-300: #292B33;
+    --White-400: #FEFEFF;
+
+    --primary-light-purple: #f1effb;
+    --primary-light-hover: #eae7f8;
+    --primary-light-active: #d4cdf1;
+    --primary-normal: #755fd2;
+    --primary-normal-hover: #6956bd;
+    --primary-normal-active: #5e4ca8;
+    --primary-dark: #58479e;
+    --primary-dark-hover: #46397e;
+    --primary-dark-active: #352b5e;
+    --primary-darker: #29214a;
+}
+
+* {
+    margin: 0;
+    padding: 0;
+}
+
+body {
+    font-family: "Inter", sans-serif;
+    font-size: 18px;
+    margin: 0;
+    padding: 0;
+    background: url('./../src/img/Pattern Background.svg') top left no-repeat,
+        url('./../src/img/Patterns Group.svg') top right no-repeat;
+    background-size: cover;
+    background-size: 100% 100%;
+    background-color: var(--Black-400);
+}
+
+.ground {
+    position: absolute;
+    top: 0px;
+    width: 100%;
+    z-index: -100;
+}
+
+li {
+    list-style: none;
+}
+
+a {
+    text-decoration: none;
+}
+
+@media only screen and (max-width: 768px) {
+    body {
+        background: url("./../src/img/Group-mobile.svg") top left no-repeat,
+            url("./../src/img/group2-mobile.svg") top right no-repeat;
+        background-size: cover;
+        background-size: 32% 14%, 32% 184%;
+        background-color: var(--Black-400);
+    }
+}

@@ -1,0 +1,108 @@
+<!DOCTYPE html>
+<html lang="PT-br">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <link rel="preconnect" href="https://fonts.googleapis.com">
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+    <link href="https://fonts.googleapis.com/css2?family=Inter:wght@100..900&display=swap" rel="stylesheet">
+    <script src="https://code.jquery.com/jquery-3.6.0.min.js"></script>
+    <link rel="stylesheet" href="styles/style.css">
+    <title>Vando Pinto</title>
+</head>
+
+<body>
+
+    <header class="header-container">
+        <img id="logo" src="./src/img/Nav Logo.svg" alt="Logotipo Nav">
+        <div class="menu-bar" id="menu-bar">
+            <nav>
+                <ul>
+                    <li><a href="index.html">Home</a></li>
+                    <li><a href="#sobre">Sobre Mim</a></li>
+                    <li><a href="projetos.html">Projetos</a></li>
+                    <li><button>Currículo</button></li>
+                </ul>
+            </nav>
+        </div>
+        <img class="button-hamburger" id="button-hamburger" src="./src/img/menuHamburger.svg" alt="Button Hamburger">
+        <div class="menu-hamburger">
+            <img class="close-button" src="./src/img/closeButton.svg" alt="Button close">
+            <div class="janela-menu">
+                <nav>
+                    <ul>
+                        <li><a href="index.html">Home</a></li>
+                        <li><a href="#sobre">Sobre Mim</a></li>
+                        <li><a href="projetos.html">Projetos</a></li>
+                        <li><button>Currículo</button></li>
+                    </ul>
+                </nav>
+            </div>
+        </div>
+    </header>
+    <section>
+        <div class="badge">
+            <div class="brand">Opa!</div>
+            <p>Sou o Vando Pinto ^^</p>
+        </div>
+        <div class="info">
+            <h1>Freelance, Programador & <br>Desenvolvedor Web</h1>
+            <div class="retangulo"></div>
+        </div>
+        <p class="texto">Minha missão é ajudar empresas a crescerem com presença online forte e experiências
+            memoráveis
+            na web. Vamos
+            juntos transformar sua ideia em um projeto de sucesso? Estou animado para começar a trabalhar com você.
+        </p>
+        <div class="frame">
+            <div class="frame-botoes">
+                <button class="see-job-button">Veja Meu Trabalho</button>
+                <button class="contact-button">Entrar em Contato</button>
+            </div>
+            <p class="texto-frame">Tive o prazer de trabalhar com essas empresas incríveis!</p>
+            <img id="Brands" src="./src/img/Brands.svg" alt="Brands">
+        </div>
+    </section>
+    <footer>
+        <div class="copy">
+            <span>(C) Copyright 2023</span>
+            <p class="segundo-p">Design por ronilsonsousars</p>
+        </div>
+        <div class="footer-itens">
+            <div class="tel">
+                <span>Telefone</span>
+                <p class="segundo-p">(61) 98599-2343</p>
+            </div>
+            <div class="email">
+                <span>Email</span>
+                <p class="segundo-p">vandopintoo@gmail.com</p>
+            </div>
+            <div class="redes-sociais">
+                <span>Redes Sociais</span>
+                <div class="icons-sociais">
+                    <a href="https://github.com/vandoPinto"><img src="./src/img/git.svg" alt="Git" /></a>
+                    <a href="https://www.instagram.com/vandopintoo/"><img src="./src/img/social-instagram 1.svg"
+                            alt="instagram" /></a>
+                </div>
+            </div>
+        </div>
+    </footer>
+    <!-- <img class="ground" src="src/img/Patterns Group.svg" alt="Ground"> -->
+</body>
+
+</html>
+
+<script>
+    $(document).ready(function () {
+        $('.menu-hamburger').hide();
+        $('.button-hamburger').click(function () {
+            $('.menu-hamburger').show();
+            $('.button-hamburger').hide();
+            $('.close-button').click(() => {
+                $('.menu-hamburger').hide();
+                $('.button-hamburger').show();
+            })
+        });
+    });
+</script>

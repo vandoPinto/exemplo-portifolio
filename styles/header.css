@@ -1,0 +1,123 @@
+ul {
+    display: flex;
+    gap: 32px;
+    /* margin: auto 48px; */
+}
+
+li {
+    font-weight: bold;
+}
+
+a {
+    color: var(--Black-400);
+    font-size: 14px;
+}
+
+.header-container {
+    display: flex;
+    align-items: center;
+    justify-content: space-between;
+    background-color: var(--White-400);
+    border-radius: 12px;
+    max-width: 1036px;
+    height: 62px;
+    margin: 96px auto auto;
+}
+
+.menu-hamburger {
+    display: block;
+}
+
+.button-hamburger {
+    display: none;
+}
+
+.janela-menu {
+    display: none;
+}
+
+#logo {
+    width: 32px;
+    margin-left: 32px;
+}
+
+.menu-bar {
+    display: flex;
+    align-items: center;
+    margin: auto 32px;
+}
+
+button {
+    padding: 8px 12px;
+    color: var(--primary-light-purple);
+    background-color: var(--primary-normal);
+    border-radius: 4px;
+    cursor: pointer;
+    border: none;
+}
+
+button:hover {
+    background-color: var(--primary-normal-hover);
+}
+
+button:active {
+    background-color: var(--primary-normal-active);
+}
+
+@media only screen and (max-width: 768px) {
+    .header-container {
+        margin: 40px auto auto;
+        height: 43px;
+    }
+
+    #logo {
+        margin-left: 16px;
+    }
+
+    .menu-bar {
+        display: none;
+    }
+
+    .menu-hamburger {
+        display: block;
+    }
+
+    .button-hamburger {
+        display: block;
+        width: 32px;
+        margin-right: 16px;
+        cursor: pointer;
+    }
+
+    .close-button {
+        position: absolute;
+        top: 43px;
+        right: 10px;
+        cursor: pointer;
+    }
+
+    .janela-menu {
+        display: flex;
+        position: relative;
+        background-color: var(--primary-light-purple);
+        width: 348px;
+        top: 150px;
+        left: -26px;
+        padding-top: 12px;
+        padding-bottom: 24px;
+        justify-content: center;
+        border-radius: 0px 0px 12px 12px;
+    }
+
+    ul {
+        display: flex;
+        gap: 32px;
+        flex-direction: column;
+        justify-content: center;
+        align-items: center;
+    }
+
+    button {
+        padding: 8px 130px;
+    }
+}
