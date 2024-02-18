@@ -6,10 +6,6 @@ main {
     height: 100vh;
 }
 
-.about-me {
-    height: 50vh;
-}
-
 .badge {
     background-color: var(--Black-300);
     border: 12px;
@@ -94,6 +90,10 @@ h1 {
     main {
         margin-top: 30px;
         height: auto;
+    }
+
+    .about-me {
+        height: 50vh;
     }
 
     h1 {
