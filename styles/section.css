@@ -6,6 +6,10 @@ main {
     height: 100vh;
 }
 
+.about-me {
+    height: 50vh;
+}
+
 .badge {
     background-color: var(--Black-300);
     border: 12px;
@@ -103,7 +107,7 @@ h1 {
     }
 
     .texto {
-        max-width: 328px;
+        width: 100%;
     }
 
     .frame {
@@ -128,5 +132,9 @@ h1 {
 
     .texto-frame {
         margin: 32px auto 12px;
+    }
+
+    .copy {
+        display: none;
     }
 }
